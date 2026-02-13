@@ -66,10 +66,6 @@ time.sleep(2)
 pyautogui.press('esc')
 time.sleep(2)
 
-# Press TAB
-pyautogui.press('tab')
-time.sleep(2)
-
 # Press ALT + TAB
 pyautogui.hotkey('shift', 'tab')
 time.sleep(2)
