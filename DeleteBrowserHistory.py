@@ -2,7 +2,7 @@ import webbrowser
 import pyautogui
 import time
 
-webbrowser.open("https://www.hey.lt")
+webbrowser.open("https://www.wikipedia.org")
 time.sleep(10)
 
 # Press ALT + F
