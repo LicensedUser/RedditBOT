@@ -3,7 +3,7 @@ import pyautogui
 import time
 import pyperclip
 import re
-
+PassWord = ("K1S9Rbl1iw")
 # Open browser
 webbrowser.open("https://temp-mail.org/en")
 
@@ -187,3 +187,10 @@ time.sleep(2)
 pyautogui.press('tab')
 time.sleep(2)
 
+# Type PassWord
+pyautogiu.write(PassWord)
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(5)
