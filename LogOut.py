@@ -53,4 +53,8 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(30)
+time.sleep(20)
+
+# Press Ctrl + W
+pyautogui.hotkey('ctrl', 'w')
+time.sleep(2)
