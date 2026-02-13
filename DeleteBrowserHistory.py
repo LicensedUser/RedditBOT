@@ -3,7 +3,7 @@ import pyautogui
 import time
 
 webbrowser.open("https://www.wikipedia.org")
-time.sleep(10)
+time.sleep(30)
 
 # Press ALT + F
 pyautogui.hotkey('alt', 'f')
