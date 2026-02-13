@@ -25,7 +25,7 @@ pyautogui.press('tab')
 time.sleep(1)
 
 # Press ALT + TAB
-pyautogui.hotkey('alt', 'tab')
+pyautogui.hotkey('shift', 'tab')
 time.sleep(1)
 
 # Press ENTER
