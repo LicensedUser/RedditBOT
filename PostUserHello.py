@@ -11,7 +11,7 @@ webbrowser.open("https://chatgpt.com")
 # Wait 60 seconds for page to load
 time.sleep(60)
 
-pyautogui.write('wWrite 1 hello post from new reddit user in csv format, ask users to engage upvote comment ,50-70 words > one csv line !ALWAYS USE CVS FORMAT!')
+pyautogui.write('wWrite 1 hello post from new reddit user in csv format, ask users to engage upvote comment ,50-70 words > !ALWAYS USE CVS FORMAT! title,post')
 time.sleep(2)
 
 pyautogui.press('enter')
@@ -103,12 +103,12 @@ with open(temp_csv, newline="", encoding="utf-8") as f:
 
 # Step 5: Use the data
 
-pyautogui.write("title")
+pyautogui.write(title)
 time.sleep(2)
 
 # Press TAB
 pyautogui.press('tab')
 time.sleep(2)
 
-pyautogui.write("post")
+pyautogui.write(post)
 time.sleep(2)
