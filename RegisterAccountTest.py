@@ -58,7 +58,7 @@ time.sleep(2)
 pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
-# Type "copy"
+# Type "Sign Up"
 pyautogui.write("Sign Up")
 time.sleep(2)
 
@@ -78,7 +78,7 @@ time.sleep(10)
 pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
-# Type "copy"
+# Type "Already a"
 pyautogui.write("Already a")
 time.sleep(2)
 
@@ -97,3 +97,34 @@ time.sleep(2)
 # Press ENTER
 pyautogui.press('enter')
 time.sleep(10)
+
+# Press Alt + 1
+pyautogui.hotkey('alt', '1')
+time.sleep(2)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Reddit"
+pyautogui.write("Reddit")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+pyautogui.keyDown('shift')
+time.sleep(1)
+pyautogui.press('down')
+time.sleep(1)
+pyautogui.press('down')
+time.sleep(1)
+pyautogui.press('down')
+time.sleep(1)
+pyautogui.keyUp('shift') 
+time.sleep(2)
+
+# Press CTRL + c
+pyautogui.hotkey('ctrl', 'c')
+time.sleep(2)
