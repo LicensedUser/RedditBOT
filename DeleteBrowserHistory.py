@@ -17,18 +17,9 @@ pyautogui.press('down')
 time.sleep(2)
 pyautogui.press('enter')
 
-for _ in range(6):
+for _ in range(8):
     pyautogui.press('tab')
     time.sleep(1)
-
-pyautogui.press('space')
-time.sleep(2)
-
-pyautogui.press('tab')
-time.sleep(2)
-
-pyautogui.press('tab')
-time.sleep(2)
 
 pyautogui.press('enter')
 time.sleep(2)
