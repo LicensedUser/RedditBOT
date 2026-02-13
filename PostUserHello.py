@@ -90,10 +90,15 @@ pyautogui.press('tab')
 time.sleep(2)
 
 PostDATA = pyperclip.paste()
+time.sleep(1)
 reader = csv.DictReader(StringIO(PostDATA))
+time.sleep(1)
 row = next(reader)
+time.sleep(1)
 title = row["title"]
+time.sleep(1)
 post = row["post"]
+time.sleep(1)
 
 pyautogui.write("title")
 time.sleep(2)
