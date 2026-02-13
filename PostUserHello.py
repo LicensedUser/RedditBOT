@@ -22,4 +22,22 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(10)
+time.sleep(2)
+
+# Open browser
+webbrowser.open("https://www.reddit.com")
+
+# Wait 20 seconds for page to load
+time.sleep(60)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Create"
+pyautogui.write("Create")
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(5)
