@@ -16,6 +16,26 @@ time.sleep(2)
 pyautogui.press('enter')
 time.sleep(60)
 
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Attach"
+pyautogui.write("Attach")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press ALT + TAB
+pyautogui.hotkey('shift', 'tab')
+time.sleep(2)
+
+# Press ALT + TAB
+pyautogui.hotkey('shift', 'tab')
+time.sleep(2)
+
 # Press ALT + TAB
 pyautogui.hotkey('shift', 'tab')
 time.sleep(2)
@@ -23,6 +43,10 @@ time.sleep(2)
 # Press ENTER
 pyautogui.press('enter')
 time.sleep(2)
+
+
+
+
 
 # Open browser
 webbrowser.open("https://www.reddit.com")
@@ -38,6 +62,28 @@ time.sleep(2)
 pyautogui.write("Create")
 time.sleep(2)
 
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(5)
+time.sleep(30)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Title"
+pyautogui.write("Title")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(30)
+
+
