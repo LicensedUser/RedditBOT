@@ -22,23 +22,19 @@ pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
 # Type "Attach"
-pyautogui.write("Attach")
+pyautogui.write("50-70")
 time.sleep(2)
 
 # Press ESC
 pyautogui.press('esc')
 time.sleep(2)
 
-# Press ALT + TAB
-pyautogui.hotkey('shift', 'tab')
+# Press TAB
+pyautogui.press('tab')
 time.sleep(2)
 
-# Press ALT + TAB
-pyautogui.hotkey('shift', 'tab')
-time.sleep(2)
-
-# Press ALT + TAB
-pyautogui.hotkey('shift', 'tab')
+# Press TAB
+pyautogui.press('tab')
 time.sleep(2)
 
 # Press ENTER
