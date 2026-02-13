@@ -166,3 +166,24 @@ time.sleep(2)
 # Type "VER CODE"
 pyautogui.write(numbers_only)
 time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(5)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Available"
+pyautogui.write("available")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
