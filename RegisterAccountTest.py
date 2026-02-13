@@ -3,7 +3,9 @@ import pyautogui
 import time
 import pyperclip
 import re
+import random
 PassWord = ("K1S9Rbl1iw")
+
 # Open browser
 webbrowser.open("https://temp-mail.org/en")
 
@@ -193,4 +195,144 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(5)
+time.sleep(20)
+
+times = random.randint(1, 4)
+
+for _ in range(times):
+    pyautogui.press('tab')
+    time.sleep(1)
+  
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('space')
+time.sleep(2)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Continue"
+pyautogui.write("Continue")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ALT + TAB
+pyautogui.hotkey('shift', 'tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Create"
+pyautogui.write("Create")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
+
+# Press Ctrl + L
+pyautogui.hotkey('ctrl', 'l')
+time.sleep(2)
+
+# Press Ctrl + C
+pyautogui.hotkey('ctrl', 'c')
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+AccURL = pyperclip.paste()
+with open("NewAccounts.txt", "a", encoding="utf-8") as file:
+    file.write(AccURL + "\n")
+  
+time.sleep(2)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Create"
+pyautogui.write("Create")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Log Out"
+pyautogui.write("Copy")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ALT + TAB
+pyautogui.hotkey('shift', 'tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(20)
