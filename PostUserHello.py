@@ -99,7 +99,7 @@ with open(temp_csv, newline="", encoding="utf-8") as f:
     post = row["post"]
 
 # Step 4: Delete the CSV
-os.remove(temp_csv)
+#os.remove(temp_csv)
 
 # Step 5: Use the data
 
