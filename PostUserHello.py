@@ -123,10 +123,6 @@ time.sleep(2)
 pyautogui.press('tab')
 time.sleep(2)
 
-
-
-
-
 # Step 1: Get clipboard data
 clipboard_data = pyperclip.paste()
 
@@ -141,8 +137,6 @@ with open(temp_csv, newline="", encoding="utf-8") as f:
     row = next(reader)
     title = row["title"]
     post = row["post"]
-
-
 
 # Step 4: Use the data
 pyautogui.write(title)
@@ -161,3 +155,42 @@ time.sleep(2)
 
 # Step 5: Delete the CSV
 #os.remove(temp_csv)
+
+
+
+
+
+
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "copy"
+pyautogui.write("Post")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ALT + TAB
+pyautogui.hotkey('shift', 'tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(2)
+
+# Press Ctrl + W
+pyautogui.hotkey('ctrl', 'w')
+time.sleep(2)
+
+# Press Ctrl + W
+pyautogui.hotkey('ctrl', 'w')
+time.sleep(2)
+
