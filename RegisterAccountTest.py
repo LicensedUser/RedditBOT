@@ -188,7 +188,7 @@ pyautogui.press('tab')
 time.sleep(2)
 
 # Type PassWord
-pyautogiu.write(PassWord)
+pyautogui.write(PassWord)
 time.sleep(2)
 
 # Press ENTER
