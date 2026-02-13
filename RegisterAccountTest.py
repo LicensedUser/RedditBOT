@@ -59,7 +59,7 @@ pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
 # Type "copy"
-pyautogui.write("Sigh Up")
+pyautogui.write("Sign Up")
 time.sleep(2)
 
 # Press ESC
