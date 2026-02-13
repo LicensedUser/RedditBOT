@@ -4,7 +4,7 @@ echo "Updating system..."
 sudo apt update
 
 echo "Installing Python, venv, pip, and Firefox..."
-sudo apt install -y python3 python3-venv python3-pip firefox
+sudo apt install -y python3 python3-venv python3-pip firefox python3-tk scrot
 
 # Create venv if it doesn't exist
 if [ ! -d "venv" ]; then
