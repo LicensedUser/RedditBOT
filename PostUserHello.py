@@ -4,6 +4,9 @@ import pyautogui
 import time
 import pyperclip
 
+import csv
+from io import StringIO
+
 # Open browser
 webbrowser.open("https://chatgpt.com")
 
@@ -84,6 +87,21 @@ time.sleep(2)
 
 # Press TAB
 pyautogui.press('tab')
-time.sleep(30)
+time.sleep(2)
 
+PostDATA = pyperclip.paste()
+read = csv.DictReader(StringIO(PostDATA)
+row = next(reader)
+title = row("title")
+post = row("post")
+
+pyautogui.write("title")
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+pyautogui.write("post")
+time.sleep(2)
 
