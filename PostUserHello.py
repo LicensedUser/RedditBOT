@@ -92,8 +92,8 @@ time.sleep(2)
 PostDATA = pyperclip.paste()
 reader = csv.DictReader(StringIO(PostDATA))
 row = next(reader)
-title = row("title")
-post = row("post")
+title = row["title"]
+post = row["post"]
 
 pyautogui.write("title")
 time.sleep(2)
