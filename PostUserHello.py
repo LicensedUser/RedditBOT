@@ -3,9 +3,7 @@ import webbrowser
 import pyautogui
 import time
 import pyperclip
-
 import csv
-from io import StringIO
 
 # Open browser
 webbrowser.open("https://chatgpt.com")
@@ -89,16 +87,25 @@ time.sleep(2)
 pyautogui.press('tab')
 time.sleep(2)
 
-PostDATA = pyperclip.paste()
-time.sleep(1)
-reader = csv.DictReader(StringIO(PostDATA))
-time.sleep(1)
-row = next(reader)
-time.sleep(1)
-title = row["title"]
-time.sleep(1)
-post = row["post"]
-time.sleep(1)
+# Step 1: Get clipboard data
+clipboard_data = pyperclip.paste()
+
+# Step 2: Write to TempCSV.csv
+temp_csv = "TempCSV.csv"
+with open(temp_csv, "w", newline="", encoding="utf-8") as f:
+    f.write(clipboard_data)
+
+# Step 3: Read the CSV
+with open(temp_csv, newline="", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    row = next(reader)
+    title = row["title"]
+    post = row["post"]
+
+# Step 4: Delete the CSV
+os.remove(temp_csv)
+
+# Step 5: Use the data
 
 pyautogui.write("title")
 time.sleep(2)
@@ -109,4 +116,3 @@ time.sleep(2)
 
 pyautogui.write("post")
 time.sleep(2)
-
