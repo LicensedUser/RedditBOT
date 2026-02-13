@@ -21,7 +21,7 @@ time.sleep(60)
 pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
-# Type "Attach"
+# Type "50-70"
 pyautogui.write("50-70")
 time.sleep(2)
 
@@ -48,7 +48,7 @@ time.sleep(2)
 # Open browser
 webbrowser.open("https://www.reddit.com")
 
-# Wait 20 seconds for page to load
+# Wait 60 seconds for page to load
 time.sleep(60)
 
 # Press Ctrl + F
@@ -63,15 +63,55 @@ time.sleep(2)
 pyautogui.press('esc')
 time.sleep(2)
 
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(10)
+
 # Press ENTER
 pyautogui.press('enter')
 time.sleep(30)
+
+
+
+
+
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
-# Type "Title"
+# Type "Create"
+pyautogui.write("Showing all")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Press ENTER
+pyautogui.press('enter')
+time.sleep(10)
+
+
+
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Create"
 pyautogui.write("Title")
 time.sleep(2)
 
@@ -82,6 +122,10 @@ time.sleep(2)
 # Press TAB
 pyautogui.press('tab')
 time.sleep(2)
+
+
+
+
 
 # Step 1: Get clipboard data
 clipboard_data = pyperclip.paste()
@@ -98,12 +142,14 @@ with open(temp_csv, newline="", encoding="utf-8") as f:
     title = row["title"]
     post = row["post"]
 
-# Step 4: Delete the CSV
-#os.remove(temp_csv)
 
-# Step 5: Use the data
 
+# Step 4: Use the data
 pyautogui.write(title)
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
 time.sleep(2)
 
 # Press TAB
@@ -112,3 +158,6 @@ time.sleep(2)
 
 pyautogui.write(post)
 time.sleep(2)
+
+# Step 5: Delete the CSV
+#os.remove(temp_csv)
