@@ -1,6 +1,8 @@
 import webbrowser
 import pyautogui
 import time
+import pyperclip
+import re
 
 # Open browser
 webbrowser.open("https://temp-mail.org/en")
@@ -127,4 +129,40 @@ time.sleep(2)
 
 # Press CTRL + c
 pyautogui.hotkey('ctrl', 'c')
+time.sleep(2)
+
+# Get text from clipboard
+text = pyperclip.paste()
+
+# Extract only numbers
+numbers = re.findall(r'\d+', text)  # finds all sequences of digits
+
+# Join all numbers together (optional)
+numbers_only = ''.join(numbers)
+
+print("Original clipboard text:", text)
+print("Numbers extracted:", numbers_only)
+
+# Press Alt + 2
+pyautogui.hotkey('alt', '2')
+time.sleep(2)
+
+# Press Ctrl + F
+pyautogui.hotkey('ctrl', 'f')
+time.sleep(2)
+
+# Type "Verification code"
+pyautogui.write("Verification code")
+time.sleep(2)
+
+# Press ESC
+pyautogui.press('esc')
+time.sleep(2)
+
+# Press TAB
+pyautogui.press('tab')
+time.sleep(2)
+
+# Type "VER CODE"
+pyautogui.write(numbers_only)
 time.sleep(2)
