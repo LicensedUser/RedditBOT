@@ -1,3 +1,4 @@
+import os
 import webbrowser
 import pyautogui
 import time
@@ -284,7 +285,9 @@ pyautogui.press('esc')
 time.sleep(2)
 
 AccURL = pyperclip.paste()
-with open("NewAccounts.txt", "a", encoding="utf-8") as file:
+
+Lootpath = os.path.expanduser("~/Desktop/NewAccounts.txt")
+with open(Lootpath, "a", encoding="utf-8") as file:
     file.write(AccURL + "\n")
   
 time.sleep(2)
@@ -318,7 +321,7 @@ pyautogui.hotkey('ctrl', 'f')
 time.sleep(2)
 
 # Type "Log Out"
-pyautogui.write("Copy")
+pyautogui.write("Log Out")
 time.sleep(2)
 
 # Press ESC
