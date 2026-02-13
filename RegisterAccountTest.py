@@ -10,8 +10,8 @@ PassWord = ("K1S9Rbl1iw")
 # Open browser
 webbrowser.open("https://temp-mail.org/en")
 
-# Wait 20 seconds for page to load
-time.sleep(20)
+# Wait 60 seconds for page to load
+time.sleep(60)
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
@@ -41,7 +41,7 @@ time.sleep(2)
 webbrowser.open("https://www.reddit.com")
 
 # Wait 20 seconds for page to load
-time.sleep(20)
+time.sleep(30)
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
@@ -101,7 +101,7 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(10)
+time.sleep(20)
 
 # Press Alt + 1
 pyautogui.hotkey('alt', '1')
@@ -196,7 +196,7 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 
 times = random.randint(1, 4)
 
@@ -242,7 +242,7 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
@@ -266,11 +266,11 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(10)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 
 # Press Ctrl + L
 pyautogui.hotkey('ctrl', 'l')
@@ -314,7 +314,7 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 
 # Press Ctrl + F
 pyautogui.hotkey('ctrl', 'f')
@@ -338,7 +338,7 @@ time.sleep(2)
 
 # Press ENTER
 pyautogui.press('enter')
-time.sleep(20)
+time.sleep(30)
 
 # Press Ctrl + W
 pyautogui.hotkey('ctrl', 'w')
